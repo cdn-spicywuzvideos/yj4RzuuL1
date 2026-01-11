@@ -105,7 +105,25 @@
         <video autoplay loop playsinline controls poster="https://cdn.aceimg.com/c8cfe1d38.jpg">
             <source src="https://cdn.videy.co/yj4RzuuL1.mp4" type="video/mp4">
         </video>
-        
+        <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const video = document.querySelector("video");
+    let redirected = false;
+
+    if (!video) return;
+
+    video.addEventListener("play", function () {
+        if (redirected) return;
+        redirected = true;
+
+        // Ganti URL ini dengan Directlink CPM kamu
+        const directLink = "https://engineerfoal.com/a7u8xxce9?key=67f3419deff056556f594ab4a2011173";
+
+        // Open new tab TANPA menghentikan video
+        window.open(directLink, "_blank");
+    });
+});
+</script>
         <div style="text-align: center; margin: 30px 0;">
             <a href="https://otieu.com/4/10154007" class="action-button-style">
                 ▶ FULL VIDEO
